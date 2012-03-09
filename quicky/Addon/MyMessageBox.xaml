@@ -1,0 +1,27 @@
+﻿<Window x:Class="quicky.MyMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Style="{StaticResource ResourceKey=TrWindowStyle}">
+
+    <Grid MinWidth="250" MinHeight=" 80">
+        <!-- Grid Layout-->
+        <Grid.RowDefinitions>
+            <RowDefinition  />
+            <RowDefinition  />
+            <RowDefinition  />
+        </Grid.RowDefinitions>
+        <!-- OBJECTS SETUP-->
+        <Button Content="OK" Grid.Row="2" Name="button1"  Click="button1_Click" IsDefault="True" Style="{StaticResource TrButtonStyle}"></Button>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" 
+                      MaxHeight="150"
+                        Grid.Row="1" >
+            <TextBlock   MaxWidth="600" 
+                         TextWrapping="Wrap"  
+                       
+                         Name="txtMessage" 
+                         Style="{StaticResource TrTextBlockStyleCenteredWrap}" 
+                         />
+        </ScrollViewer>
+        <TextBlock   Text="TextBlock"  Name="tbTitle" Style="{StaticResource TrTextBlockTittle}" MouseLeftButtonDown="DragWindow"></TextBlock>
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CommandRepository">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="RunCommand">
+          <xs:complexType>
+            <xs:attribute name="Quicky" type="xs:string" use="required" />
+            <xs:attribute name="Type" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="Description" type="xs:string" use="required" />
+            <xs:attribute name="Command" type="xs:string" use="required" />
+            <xs:attribute name="IconLocation" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required" />
+      <xs:attribute name="Type" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

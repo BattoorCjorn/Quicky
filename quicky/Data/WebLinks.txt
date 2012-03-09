@@ -1,0 +1,14 @@
+Google search	https://www.google.be	Google
+Google mail client	https://mail.google.com/mail/?hl=nl&shva=1#inbox	GoogleMail
+Google documenten	https://mail.google.com/mail/?hl=nl&shva=1#inbox	GoogleDocs
+Google mail client	https://mail.google.com/mail/?hl=nl&shva=1#inbox	Mail
+Google documenten	https://mail.google.com/mail/?hl=nl&shva=1#inbox	Docs
+Google photo's	http://picasaweb.google.com/home?tab=oq	GooglePicasa
+Google photo's	http://picasaweb.google.com/home?tab=oq	PicasaWeb
+Het laatste nieuws	http://www.hln.be/	hln
+Bay W Pirate site!	http://bayw.org/	bayw
+Bay W Pirate site!	http://bayw.org/	forumw
+Google code	http://code.google.com/	GCode
+Pc fortis banking	https://www.bnpparibasfortis.be/portal/start.asp	bank
+Compose a new email in google	https://mail.google.com/mail/?hl=nl&shva=1#compose	NewMail
+HBOI B1 prog3 - Smartschool V9.1	http://cvovtib.smartschool.be/index.php?module=Forum&file=showforum&forumID=4&classID=0&courseID=4&ssID=1147	smartschool

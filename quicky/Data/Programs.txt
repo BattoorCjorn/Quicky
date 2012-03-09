@@ -1,0 +1,14 @@
+League of legends US	F:\Games\LoLUS\lol.launcher.exe	LOL-US
+League of legends EU	D:\Games\LOL\lol.launcher.exe	LOL
+Visual Studio 2010 Pro	D:\Programs\VS2010C#\Common7\IDE\devenv.exe	VSPRO
+Visual C# EXPRESS 2010	D:\Programs\VS2010C#\Common7\IDE\vcsexpress.exe	VS
+Microsoft Visio	Visio	Visio
+Interner Download Manager	"C:\Program Files\Internet Download Manager\IDMan.exe"	IDM
+Programma snelkoppelingen	C:\Users\CWN8400\Documents\Visual Studio 2010\Projects\quicky\quicky\Data\programs.txt	programs
+Weblinks	C:\Users\CWN8400\Documents\Visual Studio 2010\Projects\quicky\quicky\Data\WebLinks.txt	weblinks
+Razor Ultima	D:\Games\Razor\Razor.exe	razor
+Map voor VS projecten	C:\Users\CWN8400\Documents\Visual Studio 2010\Projects	Projects
+Mijn Documenten	C:\Users\CWN8400\Documents	Documenten
+Mozilla browser	"C:\Program Files\Mozilla Firefox 4.0 Beta 7\firefox.exe"	Mozilla
+Remove Software	"C:\Users\CWN8400\Documents\Programs and Features - Shortcut.lnk"	remove software
+7-zip	"C:\Program Files\7-Zip\7zFM.exe"	7-zip

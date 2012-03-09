@@ -1,0 +1,13 @@
+7 februari
+----------
+
+- export van alles in een keer kunnen uitvoeren, met icoontjes en relatieve path naar icoontjes
+- importeren van settings mogelijk maken
+- settingswindow minder foutgevoelig maken (ok 7feb)
+- help files!
+- Make messagebox scrollable (ok 7feb)
+- On filedrop handel .exe .bat as files, so create a new quiky for them
+- Add feature to be able to clean out images that are no longer used (ok 8feb)
+- Make it so you can togle the above feature to be run on saving
+- write filedrop handling in new class
+- Make it possible to put shotcutkeys on commands (they should only work when quicky has focus...

@@ -1,0 +1,95 @@
+﻿<Window x:Class="quicky.CommandBox"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:l="clr-namespace:quicky"
+        xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+		Title="Quicky"       
+        Deactivated="Window_Deactivated"
+        Foreground="#B469690D"
+        Background="Transparent"
+        WindowStyle="None" 
+        WindowStartupLocation="Manual"
+        ShowInTaskbar="False"
+        WindowState="Normal" 
+        SizeToContent="WidthAndHeight"
+        AllowsTransparency="True"
+       
+        >
+
+
+    <!--Background="{DynamicResource TrBackgroundRadialBrush}"-->
+    <Grid Name="maingrid" OverridesDefaultStyle="False">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <l:NotificationAreaIcon 
+            x:Name="NotifyIcon"
+                      Text="Quicky" 
+                      Icon="Resources\NotificationAreaIcon.ico"
+                      MouseDoubleClick="OnNotificationAreaIconDoubleClick" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <l:NotificationAreaIcon.MenuItems>
+                <forms:MenuItem Text="Open" Click="OnMenuItemOpenClick"  />
+                <forms:MenuItem Text="Settings" DefaultItem="False" Click="MenuItem_Click" />
+                <forms:MenuItem Text="-" />
+                <forms:MenuItem Text="Exit" Click="OnMenuItemExitClick" DefaultItem="True" />
+            </l:NotificationAreaIcon.MenuItems>
+        </l:NotificationAreaIcon>
+
+
+
+
+
+        <Border  Grid.Row="1" Name="StackPanelComboBoxBorder" Background="{DynamicResource TrBackgroundRadialBrush}"
+                 CornerRadius="5"  MouseLeftButtonDown="DragWindow" >
+            <StackPanel Name="StackPanelComboBox" Orientation="Horizontal"  >
+
+                <ComboBox   x:Name="txtInput" Margin="10,5" MinWidth="250" Style="{StaticResource ComboBoxStyle}"
+                    IsEditable="True"
+                    KeyDown="txtInput_KeyDown" SelectionChanged="txtInput_SelectionChanged" >
+
+                </ComboBox>
+                <TextBlock Name="txtDescription"  VerticalAlignment="Center"  Style="{StaticResource TrTextBlockCommandBox}"  />
+
+
+                <Button Name="btnClose"  Click="btnClose_Click" Style="{StaticResource TrButtonStyle}" >
+                    <StackPanel >
+                        <Image  MaxHeight="13" Source="/quicky;component/Resources/redbutton.png"></Image>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+
+
+
+
+        <!-- define Ellipse width of 100 and height 100 -->
+        <Border Width="128"  Height="128" Visibility="Hidden" Margin="10"  HorizontalAlignment="Left" Name="MyIconViewer" Grid.Row="0" BorderThickness="5" CornerRadius="15" Padding="10" Background="#55DCF5F4" BorderBrush="OliveDrab">
+            <Rectangle  >
+                <Rectangle.ContextMenu>
+                    <ContextMenu >
+                        <MenuItem Header="Icon location">
+                            <MenuItem Header="Top" Click="SetImageTop"></MenuItem>
+                            <MenuItem Header="Bottem" Click="SetImageBot"></MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Icon alignment" BorderBrush="#6C000000">
+                            <MenuItem Header="Left" Click="SetImageAlLeft"></MenuItem>
+                            <MenuItem Header="Center" Click="SetImageAlCenter"></MenuItem>
+                            <MenuItem Header="Right" Click="SetImageRight"></MenuItem>
+                        </MenuItem>
+                    </ContextMenu>
+                </Rectangle.ContextMenu>
+                <!-- dependency Property of Ellipse -->
+                <Rectangle.Fill  >
+                    <!-- Image Brush is used to fill the Ellipse area into Image -->
+                    <ImageBrush x:Name="imageView" ></ImageBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Border>
+
+
+
+    </Grid>
+</Window>

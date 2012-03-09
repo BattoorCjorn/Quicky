@@ -1,0 +1,155 @@
+Accessibility Controls	access.cpl	access.cpl
+Accessibility Wizard	accwiz	accwiz
+Add Hardware Wizard	hdwwiz.cpl	hdwwiz.cpl
+Add/Remove Programs	appwiz.cpl	appwiz.cpl
+Administrative Tools	control admintools	control admintools
+Adobe Acrobat (if installed)	acrobat	acrobat
+Adobe Designer (if installed)	formdesigner	formdesigner
+Adobe Distiller (if installed)	acrodist	acrodist
+Adobe ImageReady (if installed)	imageready	imageready
+Adobe Photoshop (if installed)	photoshop	photoshop
+Automatic Updates	wuaucpl.cpl	wuaucpl.cpl
+Bluetooth Transfer Wizard	fsquirt	fsquirt
+Calculator	calc	calc
+Certificate Manager	certmgr.msc	certmgr.msc
+Character Map	charmap	charmap
+Check Disk Utility	chkdsk	chkdsk
+Clipboard Viewer	clipbrd	clipbrd
+Command Prompt	cmd	cmd
+Component Services	dcomcnfg	dcomcnfg
+Computer Management	compmgmt.msc	compmgmt.msc
+Control Panel	control	control
+Date and Time Properties	timedate.cpl	timedate.cpl
+DDE Shares	ddeshare	ddeshare
+Device Manager	devmgmt.msc	devmgmt.msc
+Direct X Control Panel (if installed)*	directx.cpl	directx.cpl
+Direct X Troubleshooter	dxdiag	dxdiag
+Disk Cleanup Utility	cleanmgr	cleanmgr
+Disk Defragment	dfrg.msc	dfrg.msc
+Disk Management	diskmgmt.msc	diskmgmt.msc
+Disk Partition Manager	diskpart	diskpart
+Display Properties	control desktop	control desktop
+Display Properties	desk.cpl	desk.cpl
+Display Properties (w/Appearance Tab Preselected)	control color	control color
+Dr. Watson System Troubleshooting Utility	drwtsn32	drwtsn32
+Driver Verifier Utility	verifier	verifier
+Event Viewer	eventvwr.msc	eventvwr.msc
+Files and Settings Transfer Tool	migwiz	migwiz
+File Signature Verification Tool	sigverif	sigverif
+Findfast	findfast.cpl	findfast.cpl
+Firefox (if installed)	firefox	firefox
+Fonts	control fonts	control fonts
+Fonts Folder	fonts	fonts
+Free Cell Card Game	freecell	freecell
+Game Controllers	joy.cpl	joy.cpl
+Group Policy Editor (XP Prof)	gpedit.msc	gpedit.msc
+Hearts Card Game	mshearts	mshearts
+Help and Support	helpctr	helpctr
+HyperTerminal	hypertrm	hypertrm
+Iexpress Wizard	iexpress	iexpress
+Indexing Service	ciadv.msc	ciadv.msc
+Internet Connection Wizard	icwconn1	icwconn1
+Internet Explorer	iexplore	iexplore
+Internet Properties	inetcpl.cpl	inetcpl.cpl
+Internet Setup Wizard	inetwiz	inetwiz
+IP Configuration (Display Connection Configuration)	ipconfig /all	ipconfig /all
+IP Configuration (Display DNS Cache Contents)	ipconfig /displaydns	ipconfig /displaydns
+IP Configuration (Delete DNS Cache Contents)	ipconfig /flushdns	ipconfig /flushdns
+IP Configuration (Release All Connections)	ipconfig /release	ipconfig /release
+IP Configuration (Renew All Connections)	ipconfig /renew	ipconfig /renew
+IP Configuration (Refreshes DHCP & Re-Registers DNS)	ipconfig /registerdns	ipconfig /registerdns
+IP Configuration (Display DHCP Class ID)	ipconfig /showclassid	ipconfig /showclassid
+IP Configuration (Modifies DHCP Class ID)	ipconfig /setclassid	ipconfig /setclassid
+Java Control Panel (if installed)	jpicpl32.cpl	jpicpl32.cpl
+Java Control Panel (if installed)	javaws	javaws
+Keyboard Properties	control keyboard	control keyboard
+Local Security Settings	secpol.msc	secpol.msc
+Local Users and Groups	lusrmgr.msc	lusrmgr.msc
+Logs You Out Of Windows	logoff	logoff
+Malicious Software Removal Tool	mrt	mrt
+Microsoft Access (if installed)	msaccess	msaccess
+Microsoft Chat	winchat	winchat
+Microsoft Excel (if installed)	excel	excel
+Microsoft Frontpage (if installed)	frontpg	frontpg
+Microsoft Movie Maker	moviemk	moviemk
+Microsoft Paint	mspaint	mspaint
+Microsoft Powerpoint (if installed)	powerpnt	powerpnt
+Microsoft Word (if installed)	winword	winword
+Microsoft Syncronization Tool	mobsync	mobsync
+Minesweeper Game	winmine	winmine
+Mouse Properties	control mouse	control mouse
+Mouse Properties	main.cpl	main.cpl
+Nero (if installed)	nero	nero
+Netmeeting	conf	conf
+Network Connections	control netconnections	control netconnections
+Network Connections	ncpa.cpl	ncpa.cpl
+Network Setup Wizard	netsetup.cpl	netsetup.cpl
+Notepad	notepad	notepad
+Nview Desktop Manager (if installed)	nvtuicpl.cpl	nvtuicpl.cpl
+Object Packager	packager	packager
+ODBC Data Source Administrator	odbccp32.cpl	odbccp32.cpl
+On Screen Keyboard	osk	osk
+Opens AC3 Filter (if installed)	ac3filter.cpl	ac3filter.cpl
+Outlook Express	msimn	msimn
+Paint	pbrush	pbrush
+Password Properties	password.cpl	password.cpl
+Performance Monitor	perfmon.msc	perfmon.msc
+Performance Monitor	perfmon	perfmon
+Phone and Modem Options	telephon.cpl	telephon.cpl
+Phone Dialer	dialer	dialer
+Pinball Game	pinball	pinball
+Power Configuration	powercfg.cpl	powercfg.cpl
+Printers and Faxes	control printers	control printers
+Printers Folder	printers	printers
+Private Character Editor	eudcedit	eudcedit
+Quicktime (If Installed)	QuickTime.cpl	QuickTime.cpl
+Quicktime Player (if installed)	quicktimeplayer	quicktimeplayer
+Real Player (if installed)	realplay	realplay
+Regional Settings	intl.cpl	intl.cpl
+Registry Editor	regedit	regedit
+Registry Editor	regedit32	regedit32
+Remote Access Phonebook	rasphone	rasphone
+Remote Desktop	mstsc	mstsc
+Removable Storage	ntmsmgr.msc	ntmsmgr.msc
+Removable Storage Operator Requests	ntmsoprq.msc	ntmsoprq.msc
+Resultant Set of Policy (XP Prof)	rsop.msc	rsop.msc
+Scanners and Cameras	sticpl.cpl	sticpl.cpl
+Scheduled Tasks	control schedtasks	control schedtasks
+Security Center	wscui.cpl	wscui.cpl
+Services	services.msc	services.msc
+Shared Folders	fsmgmt.msc	fsmgmt.msc
+Shuts Down Windows	shutdown	shutdown
+Sounds and Audio	mmsys.cpl	mmsys.cpl
+Spider Solitare Card Game	spider	spider
+SQL Client Configuration	cliconfg	cliconfg
+System Configuration Editor	sysedit	sysedit
+System Configuration Utility	msconfig	msconfig
+System File Checker Utility (Scan Immediately)	sfc /scannow	sfc /scannow
+System File Checker Utility (Scan Once At The Next Boot)	sfc /scanonce	sfc /scanonce
+System File Checker Utility (Scan On Every Boot)	sfc /scanboot	sfc /scanboot
+System File Checker Utility (Return Scan Setting To Default)	sfc /revert	sfc /revert
+System File Checker Utility (Purge File Cache)	sfc /purgecache	sfc /purgecache
+System File Checker Utility (Sets Cache Size to size x)	sfc /cachesize=x	sfc /cachesize=x
+System Information	msinfo32	msinfo32
+System Properties	sysdm.cpl	sysdm.cpl
+Task Manager	taskmgr	taskmgr
+TCP Tester	tcptest	tcptest
+Telnet Client	telnet	telnet
+Tweak UI (if installed)	tweakui	tweakui
+User Account Management	nusrmgr.cpl	nusrmgr.cpl
+Utility Manager	utilman	utilman
+Windows Address Book	wab	wab
+Windows Address Book Import Utility	wabmig	wabmig
+Windows Backup Utility (if installed)	ntbackup	ntbackup
+Windows Explorer	explorer	explorer
+Windows Firewall	firewall.cpl	firewall.cpl
+Windows Magnifier	magnify	magnify
+Windows Management Infrastructure	wmimgmt.msc	wmimgmt.msc
+Windows Media Player	wmplayer	wmplayer
+Windows Messenger	msmsgs	msmsgs
+Windows Picture Import Wizard (need camera connected)	wiaacmgr	wiaacmgr
+Windows System Security Tool	syskey	syskey
+Windows Update Launches	wupdmgr	wupdmgr
+Windows Version (to show which version of windows)	winver	winver
+Windows XP Tour Wizard	tourstart	tourstart
+Wordpad	write	write

@@ -1,0 +1,57 @@
+Help Pane	helppane	helppane
+Color Management	colorcpl	colorcpl
+Computer Management Launcher	CompMgmtLauncher	CompMgmtLauncher
+Control Panel	control	control
+Credential Backup and Restore Wizard	credwiz	credwiz
+Defragment User Interface	dfrgui	dfrgui
+Driver Package Installer	dpinst	dpinst
+DPI Scaling	dpiscaling	dpiscaling
+DVD Player	dvdplay	dvdplay
+Display Adapter Troubleshooter	AdapterTroubleshooter	AdapterTroubleshooter
+Authorization Manager	azman.msc	azman.msc
+Bitlocker Wizard	bitlockerwizard	bitlockerwizard
+Event Viewer	eventvwr	eventvwr
+Firewall Settings	FirewallSettings	FirewallSettings
+Firewall Control Panel	FirewallControlPanel	FirewallControlPanel
+Windows Firewall with Advanced Security	wf.msc	wf.msc
+Problem Reports and Solutions	wercon	wercon
+Windows Fax and Scan	wfs	wfs
+Windows Image Acquisition	wiaacmgr	wiaacmgr
+Windows Update Application Manager	wuapp	wuapp
+Windows Standalong Update Manager	wusa	wusa
+Windows Shared Folder Management	fsmgmt.msc	fsmgmt.msc
+Snipping Tool	snippingtool	snippingtool
+Bitlocker Notifier	fvenotify	fvenotify
+Fax Cover Sheet Editor	fxscover	fxscover
+iSCSI Initiator	iscsicpl	iscsicpl
+Iexpress	iexpress	iexpress
+Logoff from Vista	logoff	logoff
+Language Pack Installer	lpksetup	lpksetup
+Windows Mobility Center	mblctr	mblctr
+Microsoft Sync Center	mobsync	mobsync
+Microsoft Support Diagnostic Tool	msdt	msdt
+Remote Assistance	msra	msra
+User Accounts	Netplwiz	Netplwiz
+ODBC Data Source Administrator	odbcad32	odbcad32
+Optional Features Manager	optionalfeatures	optionalfeatures
+People Near Me	p2phost	p2phost
+Performance Monitor	perfmon	perfmon
+Presentation Settings	presentationsettings	presentationsettings
+Printer Migration	PrintBrmUi	PrintBrmUi
+Encryption File System	rekeywiz	rekeywiz
+Windows Backup Utility	sdclt	sdclt
+Accesibility Settings	sethc	sethc
+Windows Share Creation Wizard	shrpubw	shrpubw
+Software Licensing/Windows Activation	slui	slui
+Sound Volume	sndvol	sndvol
+Sound Recorder	soundrecorder	soundrecorder
+Sticky Note	StikyNot	StikyNot
+Digitizer Calibration Tool	tabcal	tabcal
+Trusted Platform Module	TpmInit	TpmInit
+System Properties	SystemPropertiesAdvanced	SystemPropertiesAdvanced
+System Properties (Hardware pre-selected)	SystemPropertiesHardware	SystemPropertiesHardware
+System Properties (Computer Name pre-selected)	SystemPropertiesComputerName	SystemPropertiesComputerName
+System Properties (Performance pre-selected)	SystemPropertiesPerformance	SystemPropertiesPerformance
+System Properties (Protection pre-selected)	SystemPropertiesProtection	SystemPropertiesProtection
+System Properties (Data Execution Prevention pre-selected)	SystemPropertiesDataExecutionPrevention	SystemPropertiesDataExecutionPrevention
+System Properties (Remote pre-selected)	SystemPropertiesRemote	SystemPropertiesRemote

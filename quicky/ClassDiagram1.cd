@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="quicky.Addon.Inputbox" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAJAAAgCAAEQIgAAIAEAACAAAIAgAAAAAAAAAAQA=</HashCode>
+      <FileName>Addon\Inputbox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.Addon.taskbarDummy" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAgAAAAAAAACgAAAAAAAAAAAA=</HashCode>
+      <FileName>Addon\taskbarDummy.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.Addon.WindowSettings" Collapsed="true">
+    <Position X="14.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAABAAggCAAAQIAAAIIAEACAAAYAgAAAIAAABAAAA=</HashCode>
+      <FileName>Addon\WindowSettings.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.Addon.XMLValidator" Collapsed="true">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Objects\XmlValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.MyMessageBox" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAABAAAgCAAAQIACAIAAAACIAAIAgAAEAAAAAAAAA=</HashCode>
+      <FileName>Addon\MyMessageBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.App" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.CommandBox" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FACAABgAggCAIQQICUAOghBACKAAYC0EQCACgCQAAAE=</HashCode>
+      <FileName>CommandBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.NotificationAreaIcon" Collapsed="true">
+    <Position X="10.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICABAAIAAEAABAAAAAAACCAAAIAAIEAOgAICAECBAQ=</HashCode>
+      <FileName>NotificationAreaIcon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.WpfSingleInstance">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Objects\WpfSingleInstance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeProject.SystemHotkey.SystemHotkey" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAEIACAAAQAAAACAAAACBAAAAAAAAAEAAAAFCAA=</HashCode>
+      <FileName>Addon\SystemHotkey.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="quicky.CommandManager.CommandManager" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAQAAAhAIDAQICZAAAUAAggAiQIINAEAACAEEBAIEA=</HashCode>
+      <FileName>CommandManager\CommandManager.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StickyWindows.DpiHelper" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAACAAAAAAAAIAAAAAAACAAAAAAAAQA=</HashCode>
+      <FileName>Interop\DpiHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StickyWindows.NativeBehaviors" Collapsed="true">
+    <Position X="14.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAABAIAAAgAAACAAIEAAABAAAAAAQAAggAA=</HashCode>
+      <FileName>Interop\NativeBehaviors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StickyWindows.NativeBehavior" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Interop\NativeBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StickyWindows.NativeMethods" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="StickyWindows.NativeMethods.WINDOWTHEMEATTRIBUTETYPE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.ExtendedWindowStyles" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.CombineRgnStyles" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.SetWindowPositionOptions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.ShowWindowOptions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.WindowLongValues" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="StickyWindows.NativeMethods.MessageHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="StickyWindows.NativeMethods.ShowWindowCommand" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="StickyWindows.NativeMethods.WindowPlacement" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="StickyWindows.NativeMethods.WindowStyles" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="StickyWindows.NativeMethods.NonClientMetrics" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="StickyWindows.NativeMethods.WindowPosition" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="StickyWindows.NativeMethods.SystemMenuItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.HT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="StickyWindows.NativeMethods.ApiRect" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="StickyWindows.NativeMethods.WindowThemeNonClientAttributes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="StickyWindows.NativeMethods.LogFont" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="StickyWindows.NativeMethods.CombineRgnResult" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="StickyWindows.NativeMethods.Margins" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="StickyWindows.NativeMethods.WindowPositionFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="StickyWindows.NativeMethods.CalculateNonClientSizeParameter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="StickyWindows.NativeMethods.WindowMessage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.CalculateNonClientSizeResults" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.EnableMenuItemOptions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="StickyWindows.NativeMethods.ApiPoint" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="StickyWindows.NativeMethods.WindowThemeAttributes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Class Name="StickyWindows.NativeMethods.MonitorInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="StickyWindows.NativeMethods.SPI" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.DeviceCap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="StickyWindows.NativeMethods.GetWindowCommand" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interop\NativeMethods.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAAQQEAADAIAAEARICAAICAQAAACgoAQQAQAqC78SAA=</HashCode>
+      <FileName>Interop\NativeMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StickyWindows.SnapToBehavior" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACABAAAgAAQEAAAAAEAAAIAACAIAAAgAAAQ=</HashCode>
+      <FileName>Interop\SnapToBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StickyWindows.WindowManager" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAAAAAAA=</HashCode>
+      <FileName>Objects\WindowManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.Objects.CommandRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAkoAACAoAAICEAAAAAAQAgQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\CommandRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="quicky.Objects.MyImageWorker" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAEAABAAAAAAACAAAAAQAAAAAAAAAADEAAAAA=</HashCode>
+      <FileName>Objects\MyImageWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.Objects.MyWorkingAreaSpy" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Objects\MyWorkingAreaSpy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.Objects.RepositoryLibrary" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAQAAABAAAAAQAAAAAACAAICBAAAAgAAAAAABA=</HashCode>
+      <FileName>Objects\RepositoryLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.Objects.RunCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UQEIARAAAIBAAYAgaAENJAAAgAQhAABAIQCEQAEgAEA=</HashCode>
+      <FileName>Objects\RunCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Components.Shell.FileIcon" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="Components.Shell.FileIcon.SHFILEINFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\FileIcon.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="Components.Shell.FileIcon.SHGetFileInfoConstants" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\FileIcon.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAQtACAABASIBAAAAAAAAEAACAIAFAAAkASAABAAAQ=</HashCode>
+      <FileName>Objects\ShellLink\FileIcon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Components.Shell.ShellLink" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="4.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Components.Shell.ShellLink.LinkDisplayMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Components.Shell.ShellLink.EShellLinkGP" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Components.Shell.ShellLink.EShowWindowFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Interface Name="Components.Shell.ShellLink.IShellLinkW" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="Components.Shell.ShellLink.UnManagedMethods" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="Components.Shell.ShellLink.EShellLinkResolveFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Interface Name="Components.Shell.ShellLink.IShellLinkA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Struct Name="Components.Shell.ShellLink._WIN32_FIND_DATAA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Components.Shell.ShellLink._WIN32_FIND_DATAW" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Interface Name="Components.Shell.ShellLink.IPersistFile" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="Components.Shell.ShellLink.CShellLink" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Interface Name="Components.Shell.ShellLink.IPersist" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Struct Name="Components.Shell.ShellLink._FILETIME" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\ShellLink\ShellLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAABAIAAACAgIAAgABAAACAgEgAAAAAAKACAAQwQAAA=</HashCode>
+      <FileName>Objects\ShellLink\ShellLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CodeProject.Win32.User32" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>Objects\Win32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeProject.Win32.Kernel32">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAACAACAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Objects\Win32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeProject.Win32.NativeWindowWithEvent" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Objects\Win32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeProject.Win32.DummyWindowWithEvent" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Win32.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="quicky.Properties.Resources" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quicky.Properties.Settings" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQBAAAAAEUAQAAIAACAAABAAAAAAQAAAABCAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="StickyWindows.INativeBehavioral">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\INativeBehavioral.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="quicky.SingleInstanceModes" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\WpfSingleInstance.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="quicky.Objects.CommandType" Collapsed="true">
+    <Position X="6" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAACAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\RunCommand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CodeProject.Win32.Modifiers" Collapsed="true">
+    <Position X="7.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAIAQ=</HashCode>
+      <FileName>Objects\Win32.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CodeProject.Win32.Msgs" Collapsed="true">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yKBBjOhuSiNLRrmiPs8aX+LcBkzdudL6aG5Dt/9nd2Q=</HashCode>
+      <FileName>Objects\Win32.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="CodeProject.Win32.MessageEventHandler" Collapsed="true">
+    <Position X="6" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Win32.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

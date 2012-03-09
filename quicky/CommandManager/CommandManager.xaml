@@ -1,0 +1,379 @@
+﻿<Window x:Class="quicky.CommandManager.CommandManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CommandManager" 
+        SizeToContent="Manual" 
+        WindowStartupLocation="CenterScreen"
+        Style="{StaticResource ResourceKey=TrCommandBoxStyle}" 
+        ShowInTaskbar="True" 
+        mc:Ignorable="d" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:my="clr-namespace:quicky.Objects" 
+        Loaded="Window_Loaded"
+        Closing="SaveChangesOnClose"
+      >
+
+
+    <Window.Resources>
+        <CollectionViewSource x:Key="commandRepositoryViewSource" 
+                              d:DesignSource="{d:DesignInstance my:CommandRepository, CreateList=True}" />
+        <CollectionViewSource x:Key="runCommandViewSource" 
+                              d:DesignSource="{d:DesignInstance my:RunCommand, CreateList=True}" />
+    </Window.Resources>
+
+
+        <Grid Name="MainGrid"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Titel  G0-->
+        <TextBlock  Text="Quicky Command Manager" 
+                    Name="txtTitle" 
+                    Style="{StaticResource TrTextBlockTittle}"  
+                    MouseDown="DragWindow"  />
+
+        <!-- MENUBAR G1-->
+        <Border Grid.Row="1" 
+                Padding="11" Name="menuBarGrid"
+                Margin="11" 
+                BorderThickness="2" 
+                CornerRadius="15" 
+                BorderBrush="{StaticResource ResourceKey=TrBorderBrush}"
+                   Background="{DynamicResource TrBackgroundRadialBrush}">
+            <Menu Margin="15,0"  Background="Transparent" >
+                <MenuItem Name="ReposMenu" Header="Repository"  Style="{StaticResource MenuItemStyle}"  MaxHeight="20" Margin="5" Background="{StaticResource StandardBorderBrush}">
+                    <MenuItem.Icon>
+                        <Image Source="/Quicky;component/Resources/App.ico" />
+                    </MenuItem.Icon>
+                    <MenuItem Header="New Repository"  Style="{StaticResource MenuItemStyle}" Click="add_repository_click" MaxHeight="30">
+                        <MenuItem.Icon>
+                            <Image Source="/Quicky;component/Resources/App.ico" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Delete Repository" Click="remove_repository_click" Style="{StaticResource MenuItemStyle}"  MaxHeight="30">
+                        <MenuItem.Icon>
+                            <Image Source="/Quicky;component/Resources/App.ico" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Import Repository" Visibility="Collapsed" Style="{StaticResource MenuItemStyle}" MaxHeight="30">
+                        <MenuItem.Icon>
+                            <Image Source="/Quicky;component/Resources/App.ico" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Export Repository" Click="Export_click" Style="{StaticResource MenuItemStyle}"  MaxHeight="30">
+                        <MenuItem.Icon>
+                            <Image Source="/Quicky;component/Resources/App.ico" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Name="CommandsMenu" Header="Commands"  Style="{StaticResource MenuItemStyle}" Margin="5" MaxHeight="20" Background="{StaticResource StandardBorderBrush}">
+                    <MenuItem.Icon>
+                        <Image Source="/Quicky;component/Resources/App.ico" />
+                    </MenuItem.Icon>
+                    <MenuItem Header="New Command"  Style="{StaticResource MenuItemStyle}"  MaxHeight="30" Click="MenuItem_NewCommand_Click">
+                        <MenuItem.Icon>
+                            <Image Source="/Quicky;component/Resources/App.ico" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Delete Command"  Style="{StaticResource MenuItemStyle}" MaxHeight="30" Click="MenuItem_deleteCommand_Click">
+                        <MenuItem.Icon>
+                            <Image Source="/Quicky;component/Resources/App.ico" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <Button Content="Test autocad Connection"  
+                        Style="{StaticResource TrButtonStyle}" 
+                        Background="{StaticResource StandardBorderBrush}" 
+                        Click="click_test_acad"
+                        Visibility="Collapsed"
+                        VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                </Button>
+                <Button Content="Explore icons"  
+                        Style="{StaticResource TrButtonStyle}" 
+                        Background="{StaticResource StandardBorderBrush}" 
+                        Click="click_explore_icons_progy"
+                        VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                </Button>
+                <Button Content="Minimize window"  
+                        Style="{StaticResource TrButtonStyle}" 
+                        Background="{StaticResource StandardBorderBrush}" 
+                        Click="click_minimize_progy"
+                        VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                </Button>
+                <Button Name="ExitNdSave" 
+                    Content="Exit and save"  
+                        Style="{StaticResource TrButtonStyle}" 
+                        Background="{StaticResource StandardBorderBrush}" 
+                        Click="click_close_progy"
+                        VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                </Button>
+            </Menu>
+
+        </Border>
+
+        <!-- COMBOBOX REPOSETORY G2-->
+        <Border Grid.Row="2"
+                Padding="11" 
+                Margin="11" 
+                BorderThickness="2" 
+                CornerRadius="15" 
+                BorderBrush="{StaticResource ResourceKey=TrBorderBrush}"
+                   Background="{DynamicResource TrBackgroundRadialBrush}">
+            <Grid  Name="gridComboxRepository" Width="350"  VerticalAlignment="Center" HorizontalAlignment="Left" >
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel    DataContext="{StaticResource commandRepositoryViewSource}">
+
+                    <TextBlock x:Name="TxtReposetory" 
+                 
+                   Text="Select a reposetory:"
+                   Style="{StaticResource TrTextBlockStyleCenteredWrap}"  
+                   Foreground="{StaticResource GreenYellowGreen}" 
+                   HorizontalAlignment="Left" 
+                   Margin="15,0" />
+
+                    <ComboBox   x:Name="cmbRepository" 
+                    Style="{StaticResource ComboBoxStyle}"
+                    Foreground="{StaticResource GreenYellowGreen}"
+                    Margin="15,0"
+                    Focusable="False" DisplayMemberPath="Name" ItemsSource="{Binding}"
+                                />
+
+                </StackPanel>
+            </Grid>
+        </Border>
+        <!-- DATAGRID COMMANDS CONTAINER -->
+        <Border Grid.Row="3" 
+                Padding="11" 
+                Margin="11,11,11,11" 
+                BorderThickness="2" 
+                CornerRadius="15" 
+                BorderBrush="{StaticResource ResourceKey=TrBorderBrush}"
+                   Background="{DynamicResource TrBackgroundRadialBrush}" >
+
+            <Grid  Name="gridComboxCommands" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" DataContext="{StaticResource runCommandViewSource}">
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="40"/>
+                    <RowDefinition  Height="108*"/>
+                    <RowDefinition  Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="113*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                  
+                </Grid.ColumnDefinitions>
+                <Border Padding="11" 
+                Margin="11,11,11,-4" Grid.RowSpan="3"
+                BorderThickness="2" Grid.Column="1" 
+                CornerRadius="15" 
+                BorderBrush="{StaticResource ResourceKey=TrBorderBrush}"
+                   Background="{DynamicResource TrBackgroundRadialBrush}" >
+                    <StackPanel MinWidth="100" MinHeight="100" >
+                        <Label 
+                               Margin="2" 
+                               Foreground="{StaticResource ResourceKey=GreenYellowGreen}" >
+                            Icon preview:
+                        </Label>
+                        <Image Source="{Binding Path=IconLocation,UpdateSourceTrigger=PropertyChanged}" ></Image>
+                        <Grid Name="errorgrid" Width="150 ">
+                            <Grid.RowDefinitions>
+                                <RowDefinition  />
+                                <RowDefinition  />
+                            </Grid.RowDefinitions>
+                            <Label Content="Current item errors:" 
+                                   Grid.Column="0" 
+                                   Grid.Row="0" 
+                                   HorizontalAlignment="Left" 
+                                   
+                                   VerticalAlignment="Center" 
+                                   Foreground="{StaticResource ResourceKey=GreenYellowGreen}"/>
+                            <TextBlock Grid.Column="0" 
+                                       Grid.Row="1"
+                                       TextWrapping="Wrap"
+                                       HorizontalAlignment="Left" 
+                                       Margin="3" Name="errorTextBlock" 
+                                       Text="{Binding Path=Error,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center"
+                                       Foreground="{StaticResource ResourceKey=GreenYellowGreen}"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+                <StackPanel Name="stackPanel1" 
+                            Height="40" 
+                            VerticalAlignment="Top" DataContext="{StaticResource runCommandViewSource}" >
+
+                    <TextBlock x:Name="TxtCommands" 
+                 
+                   Text="Select a Quicky:"
+                   Style="{StaticResource TrTextBlockStyleCenteredWrap}"  
+                   Foreground="{StaticResource GreenYellowGreen}" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="15,0" />
+
+                    <ComboBox   x:Name="CmbCommands" 
+                    Style="{StaticResource ComboBoxStyle}"
+                    Foreground="{StaticResource GreenYellowGreen}"
+                    Margin="15,0"
+                    DisplayMemberPath="Quicky" 
+                    ItemsSource="{Binding}" 
+                    SelectedValuePath="Quicky"
+                    IsEditable="True"/>
+
+                </StackPanel>
+
+                <DataGrid AutoGenerateColumns="False" 
+                          ItemsSource="{Binding}" 
+                          Margin="15"
+                          Name="runCommandDataGrid" 
+                          RowDetailsVisibilityMode="Collapsed" 
+                          Grid.Row="1" VerticalScrollBarVisibility="Auto"
+                          VerticalAlignment="Top"
+                          CanUserAddRows="False"
+                          AlternatingRowBackground="LightGoldenrodYellow" AlternationCount="1" 
+                          EnableRowVirtualization="True" 
+                          EnableColumnVirtualization="True"
+                          VirtualizingStackPanel.IsVirtualizing="True"
+                          VirtualizingStackPanel.VirtualizationMode="Recycling"
+                          PreviewDrop="DoDrop" 
+                          AllowDrop="True" MinRowHeight="60" MinColumnWidth="60" >
+
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="imagePreview" 
+                                            IsReadOnly="True" 
+                                            CanUserReorder="False" 
+                                            CanUserResize="False" 
+                                            CanUserSort="False" 
+                                            Header="Preview">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap" />
+                                    <Setter Property="Height" Value="60" />
+                                    <Setter Property="Width" Value="60" />
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <ImageBrush ImageSource="{Binding Path=IconLocation,UpdateSourceTrigger=PropertyChanged}" />
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn x:Name="quickyColumn" 
+                                            Binding="{Binding Path=Quicky,
+                                            ValidatesOnDataErrors=True, 
+                                            Mode=TwoWay,
+                                            UpdateSourceTrigger= PropertyChanged}" 
+                                            Header="Quicky" MaxWidth="200">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="Margin" Value="3"/>
+                                    <Setter Property="MaxWidth" Value="300"/>
+
+
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn x:Name="commandColumn" 
+                                            Binding="{Binding Path=Command}" 
+                                            Header="Command" MaxWidth="200">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="Margin" Value="3"/>
+                                    <Setter Property="MaxWidth" Value="200"/>
+
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn x:Name="argumentColumn" Binding="{Binding Path=Arguments}" Header="Arguments" MaxWidth="200">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap" />
+                                    <Setter Property="Margin" Value="3" />
+                                    <Setter Property="MaxWidth" Value="200" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn x:Name="desctiptionColumn" 
+                                            Binding="{Binding Path=Desctiption}" 
+                                            Header="Desctiption" MaxWidth="200">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="Margin" Value="3"/>
+                                    <Setter Property="MaxWidth" Value="200"/>
+                                </Style>
+
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTemplateColumn x:Name="typeColumn" Header="Type" IsReadOnly="True" MaxWidth="200">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Label Content="{Binding Path=Type}" Mouse.MouseDown="typeColumn_MouseDown" Tag="type" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="iconLocationColumn" 
+                                            Binding="{Binding Path=IconLocation}" 
+                                            Header="Icon Location" MaxWidth="200"
+                                            IsReadOnly="True">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="Margin" Value="3"/>
+                                    <Setter Property="MaxWidth" Value="200"/>
+                                </Style>
+
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                       
+                    </DataGrid.Columns>
+                    <DataGrid.ContextMenu>
+                        <ContextMenu Name="MainContextmenu">
+                            <MenuItem Header="Add" Click="AddNewCommand_fromtextbox_click"></MenuItem>
+                            <MenuItem Header="Delete" Click="mouseUp_fromtextbox_Delete_Command"></MenuItem>
+                            <MenuItem Header="Execute" Click="mouse_fromtextbox_UpExecute_Command"></MenuItem>
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
+                                       
+                </DataGrid>
+
+                <Grid Grid.Row="2" Name="StatusGrid" >
+                    <ProgressBar Name="ProgressBarStatus" 
+                                 BorderBrush="#FF30E830"
+                                 OpacityMask="#CD000000" 
+                                 UseLayoutRounding="True"
+                                 Background="#50A3B53F">
+                        <ProgressBar.Foreground>
+                            <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                <GradientStop Color="#FFD60000" Offset="0" />
+                                <GradientStop Color="#FF29B110" Offset="1" />
+                            </LinearGradientBrush>
+                        </ProgressBar.Foreground>
+                    </ProgressBar>
+                    <Border BorderThickness="2" 
+                            CornerRadius="10" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Center" 
+                            Margin="10" Padding="2" BorderBrush="Chartreuse" Background="#6F000000">
+                    <TextBlock Name="ProgressbarLabel" HorizontalAlignment="Left" Margin="15,0" VerticalAlignment="Center" Style="{StaticResource TrTextBlockCommandBox}">
+                    </TextBlock>
+                    </Border>
+                    
+
+
+                </Grid>
+            </Grid>
+
+        </Border>
+
+       
+    </Grid>
+</Window>
